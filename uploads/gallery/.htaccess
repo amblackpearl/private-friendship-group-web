@@ -1,0 +1,25 @@
+# Disable PHP execution in the uploads directory
+<FilesMatch "\.(php|php[34578]|phtml|phar)$">
+    Order Deny,Allow
+    Deny from All
+</FilesMatch>
+
+# Only allow image files to be served directly
+<FilesMatch "\.(?i:jpg|jpeg|png|webp|gif)$">
+    Order Allow,Deny
+    Allow from All
+</FilesMatch>
+
+# Disable directory listing
+Options -Indexes
+
+# If running php as apache module, force off engine
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag engine off
+</IfModule>
