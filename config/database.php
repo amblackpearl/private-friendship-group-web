@@ -10,10 +10,10 @@
  */
 
 // Database credentials
-$db_host = 'sql213.infinityfree.com';
-$db_name = 'if0_42045184_friendship_group_db';
-$db_user = 'if0_42045184';
-$db_pass = '0f6uAO28lvRJjVf';
+$db_host = '';
+$db_name = '';
+$db_user = '';
+$db_pass = '';
 
 // Data Source Name
 $dsn = "mysql:host={$db_host};dbname={$db_name};charset=utf8mb4";

@@ -16,8 +16,8 @@ define('APP_NAME', 'Friendship Group Web');
 
 // Registration verification passcodes (server-side only)
 // Change these before any real usage
-define('ADMIN_REGISTER_PASSCODE', 'adminTemanNabi');
-define('MEMBER_REGISTER_PASSCODE', 'TimurTerasing');
+define('ADMIN_REGISTER_PASSCODE', '---');
+define('MEMBER_REGISTER_PASSCODE', '---');
 
 // File upload settings
 define('MAX_UPLOAD_SIZE', 5 * 1024 * 1024); // 5 MB
